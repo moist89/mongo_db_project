@@ -1,0 +1,72 @@
+# -----------------
+# Java + Spring Boot
+# -----------------
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# -----------------
+# Maven
+# -----------------
+target/
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# -----------------
+# IDEs
+# -----------------
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# VS Code
+.vscode/
+
+# Eclipse
+.project
+.classpath
+.cproject
+.settings/
+bin/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# -----------------
+# OS / Misc
+# -----------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.orig
+
+# -----------------
+# Docker (opcional)
+# -----------------
+*.env
+.env.*
+docker-compose.override.yml

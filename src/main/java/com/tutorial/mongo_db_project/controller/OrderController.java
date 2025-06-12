@@ -1,6 +1,7 @@
 package com.tutorial.mongo_db_project.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.tutorial.mongo_db_project.dto.OrderRequestDTO;
@@ -12,6 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
 
+import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -38,9 +40,29 @@ public class OrderController{
         return ResponseEntity.ok(orderService.findOrder());
     }
     @GetMapping("/client/{clientId}")
-    public ResponseEntity<List<Order>> findbyClientId(@PathVariable  String clientId) {
+    public ResponseEntity<Page<Order>> findbyClientId(
+        @PathVariable  String clientId
+        ,@RequestParam(defaultValue = "0") int page 
+        ,@RequestParam(defaultValue = "10")  int size) {
         log.info("iniciando la consulta por clientId: {} ",clientId);
 
-        return ResponseEntity.ok(orderService.getOrdersByClientId(clientId));
+        return ResponseEntity.ok(orderService.getOrdersByClientId(clientId,page,size));
     }
+    @GetMapping("/status/{status}")
+public ResponseEntity<Page<Order>> getOrdersByStatus(
+        @PathVariable String status,
+        @RequestParam(defaultValue = "0") int page,
+        @RequestParam(defaultValue = "10") int size
+) {
+    return ResponseEntity.ok(orderService.getOrdersByStatus(status, page, size));
+}
+
+@GetMapping("/channel/{channel}")
+public ResponseEntity<Page<Order>> getOrdersByChannel(
+        @PathVariable String channel,
+        @RequestParam(defaultValue = "0") int page,
+        @RequestParam(defaultValue = "10") int size
+) {
+    return ResponseEntity.ok(orderService.getOrdersByChannel(channel, page, size));
+}
 }

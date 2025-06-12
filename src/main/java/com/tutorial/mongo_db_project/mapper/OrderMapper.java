@@ -15,6 +15,7 @@ public class OrderMapper {
                 .id("ORDER-" + UUID.randomUUID())
                 .clientId(dto.getClientId())
                 .channel(dto.getChannel())
+                .currentStatus("CREATED")
                 .createdAt(Instant.now())
                 .statusHistories(List.of(
                         StatusHistory.builder()

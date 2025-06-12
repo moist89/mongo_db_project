@@ -25,6 +25,7 @@ private String clientId ;
 private String channel ; 
 
 private Instant createdAt ; 
+private String currentStatus;
 
 private List<StatusHistory> statusHistories ; 
 private List<Item> items ; 

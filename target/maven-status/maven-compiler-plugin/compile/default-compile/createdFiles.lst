@@ -1,5 +1,6 @@
 com/tutorial/mongo_db_project/model/Order$OrderBuilder.class
 com/tutorial/mongo_db_project/dto/ItemDTO.class
+com/tutorial/mongo_db_project/service/OrderAnalyticsService.class
 com/tutorial/mongo_db_project/model/Order.class
 com/tutorial/mongo_db_project/controller/OrderController.class
 com/tutorial/mongo_db_project/model/Item$ItemBuilder.class

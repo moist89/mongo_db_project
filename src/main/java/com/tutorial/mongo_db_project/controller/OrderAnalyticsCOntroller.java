@@ -34,6 +34,8 @@ public class OrderAnalyticsCOntroller {
     @GetMapping("/top-products")
     public ResponseEntity<List<org.bson.Document>> getTopProductsByChannel(
             @RequestParam String channel) {
+                log.info(" iniciando la  consulta top 5 products by channel : {} ",
+                channel);
         return ResponseEntity.ok(analyticsService.getTop5ProductsByChannel(channel));
     }
 

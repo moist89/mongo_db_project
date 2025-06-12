@@ -1,1 +1,10 @@
 /Users/moisesmedina/Documents/GitHub/mongo_db_project/src/main/java/com/tutorial/mongo_db_project/MongoDbProjectApplication.java
+/Users/moisesmedina/Documents/GitHub/mongo_db_project/src/main/java/com/tutorial/mongo_db_project/controller/OrderController.java
+/Users/moisesmedina/Documents/GitHub/mongo_db_project/src/main/java/com/tutorial/mongo_db_project/dto/ItemDTO.java
+/Users/moisesmedina/Documents/GitHub/mongo_db_project/src/main/java/com/tutorial/mongo_db_project/dto/OrderRequestDTO.java
+/Users/moisesmedina/Documents/GitHub/mongo_db_project/src/main/java/com/tutorial/mongo_db_project/mapper/OrderMapper.java
+/Users/moisesmedina/Documents/GitHub/mongo_db_project/src/main/java/com/tutorial/mongo_db_project/model/Item.java
+/Users/moisesmedina/Documents/GitHub/mongo_db_project/src/main/java/com/tutorial/mongo_db_project/model/Order.java
+/Users/moisesmedina/Documents/GitHub/mongo_db_project/src/main/java/com/tutorial/mongo_db_project/model/StatusHistory.java
+/Users/moisesmedina/Documents/GitHub/mongo_db_project/src/main/java/com/tutorial/mongo_db_project/respository/OrderRepository.java
+/Users/moisesmedina/Documents/GitHub/mongo_db_project/src/main/java/com/tutorial/mongo_db_project/service/OrderService.java
